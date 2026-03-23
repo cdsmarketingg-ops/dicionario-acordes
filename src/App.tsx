@@ -189,7 +189,7 @@ const Hero = () => {
             <div className="relative z-10 bg-white p-4 rounded-[2rem] shadow-2xl border border-stone-100 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="aspect-square bg-stone-100 rounded-[1.5rem] overflow-hidden relative group">
                 <img 
-                  src="https://eliabcampos.com/wp-content/uploads/2026/03/ChatGPT-Image-23-de-mar.-de-2026-09_10_36.png" 
+                  src="https://i.ibb.co/j9wNbSVp/Chat-GPT-Image-23-de-mar-de-2026-09-10-36.png" 
                   alt="Dicionário de Acordes - Eliab Campos" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                   crossOrigin="anonymous"
