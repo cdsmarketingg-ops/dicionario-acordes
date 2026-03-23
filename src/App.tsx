@@ -35,50 +35,50 @@ interface FAQItem {
 }
 
 const chordVariations = [
-  "Dur", "Moll", "Dominantseptakkorde", "Maj7", "m7", "m7(b5)", "dim7", 
-  "sus4", "7sus4", "6er", "m6", "9er", "add9", "m9", "Maj9", "11er", "m11", 
-  "13er", "7(b9)", "7(#9)", "7(b5)", "7(#5)", "Maj7(#11)", "m(Maj7)", "dim", "aug"
+  "Maior", "Menor", "Acordes de Sétima Dominante", "Maj7", "m7", "m7(b5)", "dim7", 
+  "sus4", "7sus4", "6", "m6", "9", "add9", "m9", "Maj9", "11", "m11", 
+  "13", "7(b9)", "7(#9)", "7(b5)", "7(#5)", "Maj7(#11)", "m(Maj7)", "dim", "aug"
 ];
 
 const features: Feature[] = [
   {
     icon: <Layers className="w-6 h-6 text-emerald-600" />,
-    title: "312 Detaillierte Diagramme",
-    description: "Klare Visualisierung jeder Position auf der Tastatur für sofortiges Lernen."
+    title: "312 Diagramas Detalhados",
+    description: "Visualização clara de cada posição no teclado para aprendizado imediato."
   },
   {
     icon: <Music className="w-6 h-6 text-emerald-600" />,
-    title: "26 Variationen pro Tonart",
-    description: "Von Basis-Dreiklängen bis hin zu komplexesten Erweiterungen (9er, 11er, 13er)."
+    title: "26 Variações por Tom",
+    description: "De tríades básicas às extensões mais complexas (9, 11, 13)."
   },
   {
     icon: <Printer className="w-6 h-6 text-emerald-600" />,
-    title: "Druckfertiges A4-Format",
-    description: "Speziell für Ihren Notenständer entwickelt, ganz ohne Komplikationen."
+    title: "Formato A4 pronto para imprimir",
+    description: "Desenvolvido especialmente para sua estante de partituras, sem complicações."
   },
   {
     icon: <Keyboard className="w-6 h-6 text-emerald-600" />,
-    title: "Visualisierung auf virtueller Tastatur",
-    description: "Intuitive Grafiken, die die reale Ansicht eines Klaviers oder Keyboards nachahmen."
+    title: "Visualização em Teclado Virtual",
+    description: "Gráficos intuitivos que imitam a visão real de um piano ou teclado."
   }
 ];
 
 const faqs: FAQItem[] = [
   {
-    question: "Wie erhalte ich das Material?",
-    answer: "Sofort nach Ihrem Kauf erhalten Sie eine E-Mail mit dem direkten Download-Link für das PDF. Sie können es auf jedem Gerät speichern."
+    question: "Como recebo o material?",
+    answer: "Imediatamente após a compra, você receberá um e-mail com o link de download direto do PDF. Você pode salvá-lo em qualquer dispositivo."
   },
   {
-    question: "Ist es für Anfänger geeignet?",
-    answer: "Absolut! Das Wörterbuch enthält alles von den grundlegendsten bis hin zu den fortgeschrittensten Akkorden, sodass Sie in Ihrem eigenen Tempo wachsen können."
+    question: "É indicado para iniciantes?",
+    answer: "Com certeza! O dicionário inclui desde os acordes mais básicos até os mais avançados, permitindo que você evolua no seu próprio ritmo."
   },
   {
-    question: "Kann I es ausdrucken?",
-    answer: "Ja, die Datei ist im hochauflösenden A4-Format optimiert, damit der Druck scharf und professionell ist."
+    question: "Posso imprimir?",
+    answer: "Sim, o arquivo está otimizado em formato A4 de alta resolução para que a impressão seja nítida e profissional."
   },
   {
-    question: "Was ist, wenn ich Fragen zu den Akkorden habe?",
-    answer: "Der Leitfaden ist rein visuell und selbsterklärend, konzipiert als schnelle Referenz während des Übens oder Komponierens."
+    question: "E se eu tiver dúvidas sobre os acordes?",
+    answer: "O guia é puramente visual e autoexplicativo, projetado para ser uma referência rápida enquanto você pratica ou compõe."
   }
 ];
 
@@ -99,11 +99,11 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Funktionen</a>
-            <a href="#chords" className="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Akkorde</a>
+            <a href="#features" className="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Funcionalidades</a>
+            <a href="#chords" className="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Acordes</a>
             <a href="#author" className="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Autor</a>
             <a href="#pricing" className="bg-emerald-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-all shadow-md shadow-emerald-200">
-              Jetzt sichern
+              Garantir Agora
             </a>
           </div>
 
@@ -124,10 +124,10 @@ const Navbar = () => {
             className="md:hidden bg-white border-b border-stone-100 overflow-hidden"
           >
             <div className="px-4 py-6 space-y-4">
-              <a href="#features" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-stone-600">Funktionen</a>
-              <a href="#chords" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-stone-600">Akkorde</a>
+              <a href="#features" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-stone-600">Funcionalidades</a>
+              <a href="#chords" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-stone-600">Acordes</a>
               <a href="#author" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-stone-600">Autor</a>
-              <a href="#pricing" onClick={() => setIsOpen(false)} className="block w-full text-center bg-emerald-600 text-white py-3 rounded-xl font-bold">Jetzt sichern</a>
+              <a href="#pricing" onClick={() => setIsOpen(false)} className="block w-full text-center bg-emerald-600 text-white py-3 rounded-xl font-bold">Garantir Agora</a>
             </div>
           </motion.div>
         )}
@@ -148,20 +148,20 @@ const Hero = () => {
           >
             <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
               <Star className="w-3 h-3 fill-current" />
-              Ultimativer visueller Leitfaden
+              Guia Visual Definitivo
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.1] mb-6">
-              Meistern Sie das Keyboard mit dem umfassendsten und visuellsten <span className="text-emerald-600">Akkord-Leitfaden</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 leading-[1.1] mb-6">
+              Domine o Teclado com o Guia de Acordes Mais <span className="text-emerald-600">Completo e Visual</span>
             </h1>
             <p className="text-lg text-stone-600 mb-8 max-w-xl leading-relaxed">
-              Vergessen Sie endlose Internet-Suchen. Halten Sie 312 professionelle Diagramme druckfertig bereit und heben Sie Ihr musikalisches Niveau noch heute an.
+              Esqueça buscas intermináveis na internet. Tenha 312 diagramas profissionais prontos para imprimir e eleve seu nível musical hoje mesmo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#pricing" 
                 className="animate-pulse-custom bg-emerald-600 text-white px-8 py-4 rounded-2xl text-lg font-bold hover:bg-emerald-700 transition-all flex items-center justify-center gap-2 shadow-xl shadow-emerald-200"
               >
-                Wörterbuch herunterladen <ArrowRight className="w-5 h-5" />
+                Baixar Dicionário <ArrowRight className="w-5 h-5" />
               </a>
               <div className="flex items-center gap-3 px-4 py-2">
                 <div className="flex -space-x-2">
@@ -175,7 +175,7 @@ const Hero = () => {
                     />
                   ))}
                 </div>
-                <span className="text-sm font-medium text-stone-500">+500 Musiker nutzen es bereits</span>
+                <span className="text-sm font-medium text-stone-500">+500 músicos já utilizam</span>
               </div>
             </div>
           </motion.div>
@@ -189,8 +189,8 @@ const Hero = () => {
             <div className="relative z-10 bg-white p-4 rounded-[2rem] shadow-2xl border border-stone-100 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="aspect-square bg-stone-100 rounded-[1.5rem] overflow-hidden relative group">
                 <img 
-                  src="https://eliabcamposteclas.com/wp-content/uploads/2026/03/Guia-completo-de-acordes-para-teclado.jpg" 
-                  alt="Akkord-Wörterbuch - Eliab Campos" 
+                  src="https://eliabcamposteclas.com/wp-content/uploads/2026/03/ChatGPT-Image-23-de-mar.-de-2026-09_10_36.jpg" 
+                  alt="Dicionário de Acordes - Eliab Campos" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -212,10 +212,10 @@ const ProblemSolution = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-            Sind Sie es leid, Ihren Rhythmus bei der Suche nach Akkorden zu verlieren?
+            Cansado de perder o ritmo procurando acordes?
           </h2>
           <p className="text-lg text-stone-600">
-            Viele Musiker sind frustriert, wenn sie eine komplexe Position vergessen oder online keine klaren Diagramme finden. Sie verlieren wertvolle Zeit, die sie eigentlich mit dem Spielen verbringen sollten.
+            Muitos músicos ficam frustrados quando esquecem uma posição complexa ou não encontram diagramas claros online. Perdem um tempo precioso que deveria ser gasto tocando.
           </p>
         </div>
 
@@ -227,19 +227,19 @@ const ProblemSolution = () => {
             <div className="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
               <X className="w-6 h-6 text-red-600" />
             </div>
-            <h3 className="text-xl font-bold mb-4">Das häufige Problem</h3>
+            <h3 className="text-xl font-bold mb-4">O Problema Comum</h3>
             <ul className="space-y-3 text-stone-600">
               <li className="flex gap-3">
                 <span className="text-red-500 font-bold">•</span>
-                Langsame Google-Suchen, die Ihre Inspiration unterbrechen.
+                Buscas lentas no Google que interrompem sua inspiração.
               </li>
               <li className="flex gap-3">
                 <span className="text-red-500 font-bold">•</span>
-                Verwirrende oder falsche Diagramme.
+                Diagramas confusos ou incorretos.
               </li>
               <li className="flex gap-3">
                 <span className="text-red-500 font-bold">•</span>
-                Mangelnde Organisation nach Tonarten und Variationen.
+                Falta de organização por tons e variações.
               </li>
             </ul>
           </motion.div>
@@ -251,19 +251,19 @@ const ProblemSolution = () => {
             <div className="w-12 h-12 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6">
               <CheckCircle2 className="w-6 h-6 text-emerald-600" />
             </div>
-            <h3 className="text-xl font-bold mb-4">Unsere Lösung</h3>
+            <h3 className="text-xl font-bold mb-4">Nossa Solução</h3>
             <ul className="space-y-3 text-stone-600">
               <li className="flex gap-3">
                 <span className="text-emerald-600 font-bold">•</span>
-                Sofortiger Zugriff auf 312 organisierte Akkorde.
+                Acesso imediato a 312 acordes organizados.
               </li>
               <li className="flex gap-3">
                 <span className="text-emerald-600 font-bold">•</span>
-                Visuelles Design, optimiert für schnelles Lernen.
+                Design visual otimizado para aprendizado rápido.
               </li>
               <li className="flex gap-3">
                 <span className="text-emerald-600 font-bold">•</span>
-                Physisches Material: Ausdrucken und auf Ihren Notenständer stellen.
+                Material físico: Imprima e coloque na sua estante.
               </li>
             </ul>
           </motion.div>
@@ -278,8 +278,8 @@ const FeaturesGrid = () => {
     <section id="features" className="py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-stone-900">Was ist im Wörterbuch enthalten?</h2>
-          <p className="text-stone-600 mt-4">Alles, was Sie brauchen, um Harmonie an einem Ort zu meistern.</p>
+          <h2 className="text-3xl font-bold text-stone-900">O que está incluso no dicionário?</h2>
+          <p className="text-stone-600 mt-4">Tudo o que você precisa para dominar a harmonia em um só lugar.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
@@ -308,7 +308,7 @@ const ChordList = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-stone-900 rounded-[3rem] p-8 md:p-16 text-white overflow-hidden relative">
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Variationen in allen 12 Tonarten enthalten</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Variações inclusas em todos os 12 tons</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {chordVariations.map((chord, index) => (
                 <div 
@@ -321,7 +321,7 @@ const ChordList = () => {
               ))}
             </div>
             <div className="mt-12 text-center">
-              <p className="text-stone-400 text-sm">Und viele weitere wichtige Kombinationen für den modernen Musiker.</p>
+              <p className="text-stone-400 text-sm">E muitas outras combinações essenciais para o músico moderno.</p>
             </div>
           </div>
           {/* Background decoration */}
@@ -337,18 +337,18 @@ const Author = () => {
   return (
     <section id="author" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
           <div className="order-2 md:order-1">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">Über den Autor</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">Sobre o Autor</h2>
             <h3 className="text-2xl font-bold text-emerald-600 mb-4">Eliab Campos Keys</h3>
             <p className="text-lg text-stone-600 leading-relaxed mb-6">
-              Musiker und Pädagoge mit jahrelanger Erfahrung darin, wie Keyboarder Harmonie verstehen. Sein visueller Ansatz hat Hunderten von Schülern geholfen, die Barriere komplexer Theorie zu überwinden.
+              Músico e educador com anos de experiência transformando a forma como tecladistas entendem a harmonia. Sua abordagem visual ajudou centenas de alunos a superar a barreira da teoria complexa.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1 text-yellow-500">
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-current" />)}
               </div>
-              <span className="text-stone-500 font-medium">Autorität in der Musikerziehung</span>
+              <span className="text-stone-500 font-medium">Autoridade em Educação Musical</span>
             </div>
           </div>
           <div className="order-1 md:order-2">
@@ -356,12 +356,12 @@ const Author = () => {
               <img 
                 src="https://eliabcamposteclas.com/wp-content/uploads/2025/01/PERFIL-2-ELIAB.jpg" 
                 alt="Eliab Campos Keys" 
-                className="rounded-[3rem] shadow-2xl w-full aspect-square object-cover"
+                className="rounded-[2rem] md:rounded-[3rem] shadow-2xl w-full aspect-square object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute -bottom-6 -right-6 bg-emerald-600 text-white p-8 rounded-3xl shadow-xl hidden lg:block">
                 <p className="text-4xl font-black mb-1">10+</p>
-                <p className="text-xs font-bold uppercase tracking-widest">Jahre Erfahrung</p>
+                <p className="text-xs font-bold uppercase tracking-widest">Anos de Experiência</p>
               </div>
             </div>
           </div>
@@ -376,8 +376,8 @@ const Pricing = () => {
     <section id="pricing" className="py-24 bg-stone-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Investieren Sie in Ihr musikalisches Talent</h2>
-          <p className="text-stone-600">Sofortiger und lebenslanger Zugriff auf das komplette Material.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Invista no seu Talento Musical</h2>
+          <p className="text-stone-600">Acesso imediato e vitalício ao material completo.</p>
         </div>
 
         <div className="max-w-lg mx-auto">
@@ -386,27 +386,32 @@ const Pricing = () => {
             className="bg-white rounded-[3rem] shadow-2xl border-2 border-emerald-600 overflow-hidden relative"
           >
             <div className="bg-emerald-600 py-4 text-center text-white text-sm font-bold uppercase tracking-widest">
-              Einführungsangebot
+              Oferta de Lançamento
             </div>
-            <div className="p-10 md:p-12">
+            <div className="p-6 sm:p-10 md:p-12">
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-stone-900 mb-2">Akkord-Wörterbuch</h3>
-                <p className="text-stone-500 text-sm">Vollständiger visueller Leitfaden als PDF</p>
+                <h3 className="text-2xl font-bold text-stone-900 mb-2">Dicionário de Acordes</h3>
+                <p className="text-stone-500 text-sm">Guia Visual Completo em PDF</p>
               </div>
 
-              <div className="flex items-baseline gap-3 mb-8">
-                <span className="text-4xl md:text-5xl font-black text-stone-900">5,90 €</span>
-                <span className="text-xl text-stone-400 line-through">27,00 €</span>
-                <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded-lg text-xs font-bold">78% RABATT</span>
+              <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-8">
+                <div className="flex flex-col">
+                  <span className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-1">Por apenas</span>
+                  <span className="text-4xl sm:text-5xl font-black text-stone-900">R$ 19,90</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-sm text-stone-400 line-through">De R$ 47,00</span>
+                  <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded-lg text-[10px] font-bold mt-1">57% DESCONTO</span>
+                </div>
               </div>
 
               <ul className="space-y-4 mb-10">
                 {[
-                  "312 hochauflösende Diagramme",
-                  "26 Variationen in allen Tonarten",
-                  "Druckfertiges A4-Format",
-                  "Lebenslanger Zugriff",
-                  "Kostenlose Updates"
+                  "312 Diagramas em alta resolução",
+                  "26 Variações em todos os tons",
+                  "Formato A4 pronto para imprimir",
+                  "Acesso vitalício",
+                  "Atualizações gratuitas"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-stone-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
@@ -416,22 +421,22 @@ const Pricing = () => {
               </ul>
 
               <a 
-                href="https://pay.hotmart.com/J104722835D?checkoutMode=10"
+                href="https://pay.kiwify.com.br/pctaMj8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-emerald-600 text-white py-5 rounded-2xl text-xl font-bold hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200 flex items-center justify-center gap-3 mb-6"
               >
-                Jetzt kaufen <Download className="w-6 h-6" />
+                Comprar Agora <Download className="w-6 h-6" />
               </a>
 
               <div className="flex items-center justify-center gap-6 text-stone-400">
                 <div className="flex flex-col items-center gap-1">
                   <ShieldCheck className="w-6 h-6" />
-                  <span className="text-[10px] font-bold uppercase">Sichere Zahlung</span>
+                  <span className="text-[10px] font-bold uppercase">Pagamento Seguro</span>
                 </div>
                 <div className="flex flex-col items-center gap-1">
                   <Star className="w-6 h-6" />
-                  <span className="text-[10px] font-bold uppercase">7-Tage-Garantie</span>
+                  <span className="text-[10px] font-bold uppercase">7 Dias de Garantia</span>
                 </div>
               </div>
             </div>
@@ -448,7 +453,7 @@ const FAQ = () => {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-stone-900 mb-12 text-center">Häufig gestellte Fragen</h2>
+        <h2 className="text-3xl font-bold text-stone-900 mb-12 text-center">Perguntas Frequentes</h2>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div 
@@ -496,11 +501,11 @@ const Footer = () => {
             <span className="font-bold text-xl tracking-tight">Eliab Campos <span className="text-emerald-600">Keys</span></span>
           </div>
           <div className="text-stone-400 text-sm">
-            © {new Date().getFullYear()} Eliab Campos Keys. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} Eliab Campos Keys. Todos os direitos reservados.
           </div>
           <div className="flex gap-6">
-            <a href="#" className="text-stone-400 hover:text-white transition-colors">AGB</a>
-            <a href="#" className="text-stone-400 hover:text-white transition-colors">Datenschutz</a>
+            <a href="#" className="text-stone-400 hover:text-white transition-colors">Termos</a>
+            <a href="#" className="text-stone-400 hover:text-white transition-colors">Privacidade</a>
           </div>
         </div>
       </div>
