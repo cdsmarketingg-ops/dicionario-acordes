@@ -189,10 +189,10 @@ const Hero = () => {
             <div className="relative z-10 bg-white p-4 rounded-[2rem] shadow-2xl border border-stone-100 transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <div className="aspect-square bg-stone-100 rounded-[1.5rem] overflow-hidden relative group">
                 <img 
-                  src="https://eliabcamposteclas.com/wp-content/uploads/2026/03/ChatGPT-Image-23-de-mar.-de-2026-09_10_36.jpg" 
+                  src="https://eliabcamposteclas.com/wp-content/uploads/2026/03/ChatGPT-Image-23-de-mar.-de-2026-09_10_36.jpg?v=2" 
                   alt="Dicionário de Acordes - Eliab Campos" 
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
               </div>
             </div>
@@ -354,10 +354,10 @@ const Author = () => {
           <div className="order-1 md:order-2">
             <div className="relative">
               <img 
-                src="https://eliabcamposteclas.com/wp-content/uploads/2025/01/PERFIL-2-ELIAB.jpg" 
+                src="https://eliabcamposteclas.com/wp-content/uploads/2025/01/PERFIL-2-ELIAB.jpg?v=2" 
                 alt="Eliab Campos Keys" 
                 className="rounded-[2rem] md:rounded-[3rem] shadow-2xl w-full aspect-square object-cover"
-                referrerPolicy="no-referrer"
+                crossOrigin="anonymous"
               />
               <div className="absolute -bottom-6 -right-6 bg-emerald-600 text-white p-8 rounded-3xl shadow-xl hidden lg:block">
                 <p className="text-4xl font-black mb-1">10+</p>
