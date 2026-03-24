@@ -333,6 +333,68 @@ const ChordList = () => {
   );
 };
 
+const PDFPreview = () => {
+  const previewImages = [
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_01.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_02.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_03.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_04.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_05.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_06.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_07.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_08.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_09.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_10.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_11.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_12.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_13.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_14.png",
+    "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_15.png",
+  ];
+
+  return (
+    <section className="py-24 bg-stone-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">Veja o Material por Dentro</h2>
+        <p className="text-stone-600">Um guia visual completo, organizado e profissional para seu aprendizado.</p>
+      </div>
+      
+      <div className="relative flex overflow-hidden">
+        <motion.div 
+          className="flex gap-6 py-4"
+          animate={{
+            x: [0, -2880], // Total width of one set of images (15 * (320px + 24px gap) = 5160px, wait)
+            // Let's use a more dynamic approach or a fixed width that works.
+            // 15 images * 320px = 4800px. Plus gaps.
+          }}
+          transition={{
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 60,
+              ease: "linear",
+            },
+          }}
+        >
+          {[...previewImages, ...previewImages, ...previewImages].map((img, index) => (
+            <div 
+              key={index} 
+              className="flex-shrink-0 w-64 md:w-80 aspect-[3/4] bg-white rounded-2xl shadow-lg border border-stone-100 overflow-hidden group"
+            >
+              <img 
+                src={img} 
+                alt={`Página ${index + 1}`} 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
 const Author = () => {
   return (
     <section id="author" className="py-24 bg-white">
@@ -522,6 +584,7 @@ export default function App() {
         <ProblemSolution />
         <FeaturesGrid />
         <ChordList />
+        <PDFPreview />
         <Author />
         <Pricing />
         <FAQ />
