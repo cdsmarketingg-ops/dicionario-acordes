@@ -398,23 +398,23 @@ const Bonuses = () => {
   const bonusList = [
     {
       badge: "Bônus #1",
-      title: "Guia Prático de Progressões de Sucesso",
-      desc: "Sequências e combinações de acordes prontas e de aplicação direta nas músicas mais tocadas do mercado (pop, worship, MPB). Crie harmonias emocionantes sem perder tempo caçando acordes.",
-      value: "R$ 49,00",
-      icon: <Music className="w-6 h-6 text-emerald-600" />
-    },
-    {
-      badge: "Bônus #2",
-      title: "Manual de Dedilhados & Preenchimentos Modernos",
-      desc: "Chega de tocar blocos de acordes estáticos e 'quadrados'. Domine desenhos de dedilhados e arpejos práticos e elegantes para conduzir fundos musicais e preencher com fluidez.",
+      title: "Guia \"Mão Esquerda Destravada\" (Exercícios Práticos de Dedilhados)",
+      desc: "Aprenda movimentos extremamente simples e fáceis para acabar de vez com aquela sensação de tocar com a mão presa, dura ou de forma 'quadrada'. Exercícios rápidos de 5 minutos por dia para dar movimento e profissionalismo ao seu som.",
       value: "R$ 39,00",
       icon: <Layers className="w-6 h-6 text-emerald-600" />
     },
     {
+      badge: "Bônus #2",
+      title: "Roteiro Rápido: Como Tirar Sua 1ª Música de Ouvido",
+      desc: "Um método muito simples e sem enrolação, mostrando exatamente o que você deve fazer para começar a treinar o seu ouvido e pegar suas primeiras músicas apenas escutando, sem precisar ficar preso a cifras na internet.",
+      value: "R$ 49,00",
+      icon: <Music className="w-6 h-6 text-emerald-600" />
+    },
+    {
       badge: "Bônus #3",
-      title: "O Segredo das Voicings & Cliques Modernos",
-      desc: "Transforme acordes simples e comuns em sonoridades sofisticadas instantâneas. Aprenda de forma prática como adicionar notas de extensão (9ª, adicionadas e tensões fáceis) sem travar teórica.",
-      value: "R$ 47,00",
+      title: "O Atalho dos 4 Acordes: Toque Mais de 100 Músicas",
+      desc: "Veja como dominar apenas 4 posições fáceis e idênticas no teclado que permitem a você tocar dezenas de músicas de forma imediata. É o caminho mais rápido para quem quer ver resultados reais e tocar logo de cara.",
+      value: "R$ 37,00",
       icon: <Keyboard className="w-6 h-6 text-emerald-600" />
     }
   ];
