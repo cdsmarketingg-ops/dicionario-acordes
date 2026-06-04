@@ -332,7 +332,6 @@ const ChordList = () => {
     </section>
   );
 };
-
 const PDFPreview = () => {
   const previewImages = [
     "https://eliabcamposteclas.com/wp-content/uploads/2026/03/pagina_01.png",
@@ -390,6 +389,100 @@ const PDFPreview = () => {
             </div>
           ))}
         </motion.div>
+      </div>
+    </section>
+  );
+};
+
+const Bonuses = () => {
+  const bonusList = [
+    {
+      badge: "Bônus #1",
+      title: "Guia Prático de Progressões de Sucesso",
+      desc: "Sequências e combinações de acordes prontas e de aplicação direta nas músicas mais tocadas do mercado (pop, worship, MPB). Crie harmonias emocionantes sem perder tempo caçando acordes.",
+      value: "R$ 49,00",
+      icon: <Music className="w-6 h-6 text-emerald-600" />
+    },
+    {
+      badge: "Bônus #2",
+      title: "Manual de Dedilhados & Preenchimentos Modernos",
+      desc: "Chega de tocar blocos de acordes estáticos e 'quadrados'. Domine desenhos de dedilhados e arpejos práticos e elegantes para conduzir fundos musicais e preencher com fluidez.",
+      value: "R$ 39,00",
+      icon: <Layers className="w-6 h-6 text-emerald-600" />
+    },
+    {
+      badge: "Bônus #3",
+      title: "O Segredo das Voicings & Cliques Modernos",
+      desc: "Transforme acordes simples e comuns em sonoridades sofisticadas instantâneas. Aprenda de forma prática como adicionar notas de extensão (9ª, adicionadas e tensões fáceis) sem travar teórica.",
+      value: "R$ 47,00",
+      icon: <Keyboard className="w-6 h-6 text-emerald-600" />
+    }
+  ];
+
+  return (
+    <section id="bonuses" className="py-24 bg-gradient-to-b from-white to-stone-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in-up">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4 animate-pulse">
+            <Star className="w-4 h-4 fill-current text-emerald-600" />
+            Oferta Especial do Dia
+          </div>
+          <h2 className="text-3xl md:text-5xl font-black text-stone-900 mb-6 leading-tight">
+            Leve Estes <span className="text-emerald-600">3 Bônus Exclusivos</span> Inteiramente Grátis
+          </h2>
+          <p className="text-lg text-stone-600">
+            Aumente exponencialmente seus recursos práticos no teclado com materiais focados em resultados rápidos, diretos ao ponto e integrados ao seu produto principal.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {bonusList.map((bonus, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.15, duration: 0.5 }}
+              whileHover={{ y: -6 }}
+              className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-stone-150 relative overflow-hidden flex flex-col justify-between hover:shadow-2xl hover:border-emerald-200 transition-all duration-300"
+            >
+              <div>
+                <div className="flex justify-between items-center mb-6">
+                  <div className="bg-emerald-50 px-3 py-1 rounded-xl text-emerald-700 font-bold text-xs uppercase tracking-wider">
+                    {bonus.badge}
+                  </div>
+                  <div className="bg-amber-100 text-amber-800 font-bold text-[11px] px-2.5 py-1 rounded-full uppercase tracking-wide">
+                    Grátis Hoje
+                  </div>
+                </div>
+                <div className="w-12 h-12 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6">
+                  {bonus.icon}
+                </div>
+                <h3 className="text-xl font-bold text-stone-900 mb-4 tracking-tight leading-snug">
+                  {bonus.title}
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed mb-6">
+                  {bonus.desc}
+                </p>
+              </div>
+              
+              <div className="pt-6 border-t border-stone-100">
+                <div className="flex items-center justify-between">
+                  <span className="text-stone-400 text-xs">Valor Individual:</span>
+                  <span className="text-stone-500 font-bold line-through text-sm">{bonus.value}</span>
+                </div>
+                <div className="flex items-center justify-between mt-1">
+                  <span className="text-stone-600 font-semibold text-xs">Na compra do guia:</span>
+                  <span className="text-emerald-600 font-extrabold text-sm uppercase">R$ 0,00</span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
+        <div className="mt-16 text-center max-w-xl mx-auto p-4 bg-emerald-50 text-emerald-800 rounded-2xl border border-emerald-100 text-sm font-medium">
+          🔥 <strong className="font-bold">Aviso:</strong> Esses bônus exclusivos são digitais e serão entregues imediatamente no seu e-mail junto com o Dicionário de Acordes!
+        </div>
       </div>
     </section>
   );
@@ -459,11 +552,11 @@ const Pricing = () => {
               <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-8">
                 <div className="flex flex-col">
                   <span className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-1">Por apenas</span>
-                  <span className="text-4xl sm:text-5xl font-black text-stone-900">R$ 19,90</span>
+                  <span className="text-4xl sm:text-5xl font-black text-stone-900">R$ 12,00</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-sm text-stone-400 line-through">De R$ 47,00</span>
-                  <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded-lg text-[10px] font-bold mt-1">57% DESCONTO</span>
+                  <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded-lg text-[10px] font-bold mt-1">74% DESCONTO</span>
                 </div>
               </div>
 
@@ -483,7 +576,7 @@ const Pricing = () => {
               </ul>
 
               <a 
-                href="https://pay.kiwify.com.br/pctaMj8"
+                href="https://pay.wiapy.com/0rPbGkVCOx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-emerald-600 text-white py-5 rounded-2xl text-xl font-bold hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200 flex items-center justify-center gap-3 mb-6"
@@ -585,6 +678,7 @@ export default function App() {
         <FeaturesGrid />
         <ChordList />
         <PDFPreview />
+        <Bonuses />
         <Author />
         <Pricing />
         <FAQ />
